@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Technology | Space tourism website</title>
+  <link rel = "icon" href =img/logo.svg type = "image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Barlow:wght@100&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"></head>
+  <script src="script.js"></script>  
+</head>
+<body>
+  <section class="text-white bg-image img-fluid tech-home";>
+    <div class="row">
+      <div class="col-lg-1 col-sm-1">
+          <img class="nav-brand logo" src="img/logo.svg" alt="">
+      </div>
+      <div class="col-lg-4 col-sm-2">
+        <p class="line-1">__________________________________________________________________________</p>
+      </div>
+      <div class="col-lg-7 col-sm-9">          
+        <nav class="navbar navbar-1 navbar-expand-md">
+          <div class="container-fluid">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon burger"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" href="index.html"><span class="number">00 </span>HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" href="destination.html"><span class="number">01 </span>DESTINATION</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-btn" href="crew.html"><span class="number">02 </span>CREW</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-btn tech" href="technology.html"><span class="number">03 </span>TECHNOLOGY</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <p class="tech-p1"><span class="number-1">03 </span>SPACE LAUNCH 101</p>
+
+    <div id="slide1">
+    <div class="row">
+      <div class="col-lg-2 buttons tech-part-1">
+        <button class="btn-2 rounded-circle">1</button>
+        <button class="btn-3 rounded-circle" onclick="slide2()">2</button>
+        <button class="btn-3 rounded-circle" onclick="slide3()">3</button>
+      </div>
+
+      <div class="col-lg-5 tech-part-2">
+        <p class="tech-p2">THE TERMINOLOGY</p>
+        <h1 class="tech-h1">LAUNCH VEHICLE</h1>
+        <p class="tech-p3">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+        </p>
+      </div>
+
+      <div class="col-lg-5 tech-part-3">
+        <img class="tech-img-1 img-fluid" src="img/technology/image-launch-vehicle-portrait.jpg" alt="">
+        <img class="tech-img-2 img-fluid" src="img/technology/image-launch-vehicle-landscape.jpg" alt="">
+      </div>
+    </div> 
+    </div>
+
+    <div id="slide2">
+    <div class="row">
+      <div class="col-lg-2 buttons tech-part-1">
+        <button class="btn-3 rounded-circle" onclick="slide1()">1</button>
+        <button class="btn-2 rounded-circle" onclick="slide2()">2</button>
+        <button class="btn-3 rounded-circle" onclick="slide3()">3</button>
+      </div>
+
+      <div class="col-lg-5 tech-part-2">
+        <p class="tech-p2">THE TERMINOLOGY</p>
+        <h1 class="tech-h1">SPACEPORT</h1>
+        <p class="tech-p3">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+          by analogy to the seaport for ships or airport for aircraft. Based in the 
+          famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+          of the Earth’s rotation for launch.
+        </p>
+      </div>
+
+      <div class="col-lg-5 tech-part-3">
+        <img class="tech-img-1 img-fluid" src="img/technology/image-spaceport-portrait.jpg" alt="">
+        <img class="tech-img-2 img-fluid" src="img/technology/image-spaceport-landscape.jpg" alt="">
+      </div>
+    </div> 
+    </div>
+
+    <div id="slide3">    
+    <div class="row">
+      <div class="col-lg-2 buttons tech-part-1">
+        <button class="btn-3 rounded-circle" onclick="slide1()">1</button>
+        <button class="btn-3 rounded-circle" onclick="slide2()">2</button>
+        <button class="btn-2 rounded-circle" onclick="slide3()">3</button>
+      </div>
+
+      <div class="col-lg-5 tech-part-2">
+        <p class="tech-p2">THE TERMINOLOGY</p>
+        <h1 class="tech-h1">SPACE CAPSULE</h1>
+        <p class="tech-p3">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule
+           to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during 
+           the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+        </p>
+      </div>
+
+      <div class="col-lg-5 tech-part-3">
+        <img class="tech-img-1 img-fluid" src="img/technology/image-launch-vehicle-portrait.jpg" alt="">
+        <img class="tech-img-2 img-fluid" src="img/technology/image-launch-vehicle-landscape.jpg" alt="">
+      </div>
+    </div> 
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>      
+</body>
+</html>

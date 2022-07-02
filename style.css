@@ -1,0 +1,631 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.home{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url('img/home/background-home-desktop.jpg');
+}
+.logo{
+    width: 50px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.line-1{
+    margin-top: 55px;
+    /* background: rgb(151, 151, 151);
+    width: 100%;
+    height: 1px; */
+}
+.navbar-1{
+    margin-top: 30px;
+    background: rgb(0, 0, 0,.1);
+    backdrop-filter: blur(15px);
+    position: relative;
+}
+.nav-btn{
+    position: relative;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.nav-btn:hover{
+    color: white;
+}
+.nav-btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    left: 0;
+    bottom: -6px;
+}
+.nav-btn:active{
+    transform: scale(1, 1);
+}
+.nav-btn::after{
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+.nav-btn:hover::after{
+    transform: scale(1, 1);
+}
+.number{
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+}
+.burger{
+    filter: invert(100%);
+}
+#slide1{
+    display: block;
+}
+#slide2{
+    display: none;
+}
+#slide3{
+    display: none;
+}
+.banner-text{
+    margin-bottom: 9rem;
+    width: 30%;
+    margin-left: 6rem;
+}
+.banner-h{
+    text-align: left;
+    font-family: 'Bellefair', serif;
+    font-size: 6rem;
+    line-height: 0.5;
+}
+.banner-p1{
+    font-family: barlow;
+    text-align: left;
+    font-size: 1.4rem;
+    padding-top: 150px;
+    color: rgb(208, 214, 249);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+.banner-p2{
+    text-align: left;
+    font-family: barlow;
+    font-size: 1rem;
+    color: rgb(208, 214, 249);
+    font-family: 'Barlow', sans-serif;
+}
+.btn-1{
+    font-family: bellefair;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(11, 13, 23);
+    width: 14rem;
+    height: 14rem;
+    padding-top: 6rem;
+    padding-right: 4rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 60%;
+    margin-top: 12rem;
+    align-items: center;
+}
+.btn-1:hover{
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .home{
+        background-image: url('img/home/background-home-tablet.jpg');
+    }
+    .logo{
+        margin-top: 20px;
+    }
+    .navbar-1{
+        margin-top: 0%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .nav-btn::after{
+    bottom: -12px;
+    }
+
+    .banner-text{
+        margin-bottom: 9rem;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        line-height: 2;
+        text-align: center;
+    }
+    .banner-h {
+        text-align: center;
+        font-size: 9.4rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .banner-p1 {
+        text-align: center;
+        margin-top: 10%;
+        padding-top: 0px;
+        font-size: 1.25rem;
+    }
+    .banner-p2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .btn-1{
+        margin-top: 0.5rem;
+        align-items: center;
+        margin-bottom: 3rem;
+        margin-left: 35%;
+        font-size: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    .line-1{
+        visibility: hidden;
+    }
+    .navbar-1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .home{
+        background-image: url('img/home/background-home-mobile.jpg');
+    }
+    .navbar-1{
+        background: none;
+        backdrop-filter: blur(0px);
+        align-items: right;
+    }
+    .banner-text{
+        width: 75%;
+    }
+    .btn-1{
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .logo{
+        width: 40px;
+        margin-top: 30px;
+    }
+    .banner-p1{
+        margin-top: 0%;
+    }
+    .navbar{
+       padding: 0%;
+    }
+    .line-1{
+        display: none;
+    }
+    .navbar button{
+        margin-top: 30px;
+    }
+}
+
+.destination-home{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url('img/destination/background-destination-desktop.jpg');
+}
+.item2{
+    color: rgb(255, 255, 255);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.number-1{
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(255, 255, 255,.25);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+}
+#moon{
+    display:contents;
+}
+#mars{
+    display: none;
+}
+#europa{
+    display: none;
+}
+#titan{
+    display: none;
+}
+.banner-img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 3rem;
+}
+.banner-right{
+    text-align: left;
+    width: 40%;
+    padding-bottom: 4rem;
+}
+.nav-btn-1{
+    position: relative;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.nav-btn-1:hover{
+    color: white;
+}
+.nav-btn-1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    left: 0;
+    bottom: 7px;
+}
+.nav-btn-1::after{
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+.nav-btn-1:hover::after{
+    transform: scale(1, 1);
+}
+.dest-h{
+    font-family: bellefair;
+}
+.dest-p3{
+    font-family: 'Barlow Condensed', sans-serif;  
+}
+.dest-h1{
+    font-family: 'Bellefair', serif;
+    font-size: 6rem;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+}
+.dest-p1{
+    font-family: barlow;
+    text-align: left;
+    font-size: 1.4rem;
+    color: rgb(208, 214, 249);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+.dest-p2{
+    color: #D0D6F9;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+}
+.line-2{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(90, 90, 90);
+}
+
+@media only screen and (max-width: 991px) {
+    .destination-home{
+        background-image: url('img/destination/background-destination-tablet.jpg');
+    }
+    .banner-img{
+        margin-bottom: 3rem;
+    }
+    .crew-text{
+        margin-top: 1rem;
+    }
+    .banner-right{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .navbar-2{
+        margin-left: 6rem;
+        text-align: center;
+    }
+    .dest-h1{
+        text-align: center;
+    }
+    .dest-p2{
+        text-align: center;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .line-2{
+        text-align: center;
+    }
+    .dest-p3{
+        text-align: center;
+    }
+    .dest-h{
+        text-align: center;
+    }
+    .nav-item-1{
+        margin-right: 1.5rem;
+    }  
+}
+@media only screen and (max-width: 767px) {
+    .destination-home{
+        background-image: url('img/destination/background-destination-mobile.jpg');
+    }
+    .banner-right{
+        width: 70%;
+    }
+    .navbar-2{
+        margin-left: 8rem;
+    }
+    
+}
+
+.crew-home{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url('img/crew/background-crew-desktop.jpg');
+}
+#douglas{
+    display: flex;
+}
+#mark{
+    display: none;
+}
+#victor{
+    display: none;
+}
+#ansari{
+    display: none;
+}
+.crew-p1{
+    font-family: barlow;
+    text-align: left;
+    font-size: 1.4rem;
+    color: rgb(208, 214, 249);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.crew-text{
+    text-align: left;
+    margin-top: 8rem;
+    padding-left: 8rem;
+}
+.crew-img{
+    width: 60%;
+    height: auto;
+    float: right;
+    bottom: 0;
+}
+.crew-h1{
+    font-family: 'Bellefair', serif;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+
+}
+.crew-p2{
+    font-size: 2rem;
+    font-family: 'Bellefair', serif;
+    color: rgb(255, 255, 255,.25);
+}
+.dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #4e4e4e;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+.dots{
+    margin-top: 4rem;
+}
+.crew-img{
+    width: 65%;
+    height: auto;
+    float: right;
+    margin-left: 100px;
+    bottom: 0;
+}
+
+
+@media only screen and (max-width: 991px){
+    .crew-text{
+        padding-left: 0;
+        margin-top: 1
+    rem;
+    }
+    .crew-h1{
+        text-align: center;
+    }
+    .crew-p2{
+        text-align: center;
+    }
+    .dots{
+        text-align: center; 
+    }
+    #douglas{
+        display: block;
+    }
+    .crew-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+
+.tech-home{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url('img/technology/background-technology-desktop.jpg');
+}
+.tech{
+    margin-right: 150px;
+}
+.tech-container{
+    padding-left: 8rem;
+    margin-top: 8rem;
+}
+.tech-p1{
+    font-family: barlow;
+    text-align: left;
+    font-size: 1.4rem;
+    color: rgb(208, 214, 249);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+.buttons{
+    padding-left: 8rem;
+    padding-top: 5rem;
+    padding-right: 3rem;
+}
+.btn-2{
+   background: white;
+   height: 60px;
+   width: 60px;
+   font-size: 2rem;
+   margin-bottom: 2rem;
+   font-family: 'Bellefair', serif;
+}
+.btn-3{
+    background: none;
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Bellefair', serif;
+    border: 0.25px solid rgb(255, 255, 255,0.2);
+}
+.btn-3:hover{
+    border: 0.25px solid rgb(255, 255, 255,1); 
+}
+.tech-p2{
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding-top: 5rem;
+}
+.tech-h1{
+    font-size: 3.5rem;
+    font-family: 'Bellefair', serif;
+    white-space: nowrap;
+}
+.tech-p3{
+    font-size: 1.12rem;
+    font-family: 'Barlow', sans-serif;
+}
+.tech-img-1{
+    width: 70%;
+    height: auto;
+    float: right;
+    padding-bottom: 6rem;
+}
+.tech-img-2{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+@media only screen and (max-width: 1150px){
+.buttons{
+    padding-left: 5rem;
+}
+}
+@media only screen and (max-width: 991px){
+    .tech-part-1{
+        order: 2;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .btn-2{
+        margin-right: 2rem;
+    }
+    .btn-3{
+        margin-right: 2rem;
+    }
+    .tech-p2{
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .tech-part-2{
+        order: 3;
+    }
+    .tech-h1{
+        text-align: center;
+    }
+    .tech-p1{
+        margin-left: 1rem;
+    }
+    .tech-p3{
+        text-align: center;
+        margin-bottom: 4rem;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+    }
+    .tech-part-3{
+        order: 1;
+    }
+    .tech-img-1{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .tech-img-2{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+    }
+}
