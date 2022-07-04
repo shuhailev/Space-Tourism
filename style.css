@@ -114,10 +114,6 @@ html,body{
     color: rgb(11, 13, 23);
     width: 14rem;
     height: 14rem;
-    padding-top: 6rem;
-    padding-right: 4rem;
-    padding-bottom: 6rem;
-    padding-left: 4rem;
     text-decoration: none;
     display: inline-block;
     margin-left: 60%;
@@ -177,10 +173,6 @@ html,body{
         margin-bottom: 3rem;
         margin-left: 35%;
         font-size: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        padding-top: 7rem;
-        padding-bottom: 7rem;
     }
     .line-1{
         visibility: hidden;
